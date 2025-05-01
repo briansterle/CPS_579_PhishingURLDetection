@@ -8,12 +8,12 @@ Set up the virtual environment and install dependencies by running the appropria
 
 ### macOS/Linux (bash/zsh):
 ```bash
-python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt
+([ -d .venv ] || python3 -m venv .venv) && source .venv/bin/activate && pip install --upgrade pip && pip install --upgrade -r requirements.txt
 ```
 
 ### Windows (PowerShell):
 ```powershell
-python -m venv .venv; .\.venv\Scripts\Activate.ps1; pip install --upgrade pip; pip install -r requirements.txt
+if (-not (Test-Path .\.venv)) { python -m venv .venv } ; . .\.venv\Scripts\Activate.ps1 ; pip install --upgrade pip ; pip install --upgrade -r requirements.txt
 ```
 
 > Alternatively, just run the setup script on the command line:
