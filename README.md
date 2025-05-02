@@ -1,6 +1,6 @@
 # CPS579 Final Project: Detecting Malicious URLs with Transformers
 
-This project applies Transformer-based NLP models (BERT, RoBERTa, DistilBERT) to detect and classify **malicious URLs**. Leveraging Hugging Face’s `transformers` and `datasets` libraries, we fine-tune state-of-the-art language models to identify phishing and other web-based threats based purely on URL text patterns.
+This project applies Transformer-based NLP models, DistilBERT and Google’s ELECTRA to detect and classify malicious URLs. Leveraging Hugging Face’s `transformers` and `datasets` libraries, we fine-tune state-of-the-art language models to identify phishing and other web-based threats based purely on URL text patterns.
 
 ## 🔧 Getting Started
 
